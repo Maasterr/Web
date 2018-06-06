@@ -1,0 +1,299 @@
+﻿<!DOCTYPE HTML>
+<html >
+   <head>
+      <title>ДекоДом</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <meta name="keywords" content="ключевые слова">
+      <meta name="description" content="описание страницы">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <script src="js/jquery.min.js"></script>
+      <script src="js/Email.js"></script>
+      <script>
+         $(document).ready(function() {
+             $('.text .text-block').eq(0).addClass('active').fadeIn(1000);
+         
+             setInterval('blockAnimate();', 5000);
+         });
+         
+         
+         function blockAnimate() {
+             var length = $('.text .text-block').length - 1;
+             $('.text .text-block').each(function(index) {
+                 if($(this).hasClass('active') && index != length) {
+                     $(this).removeClass('active').fadeOut(1000).next('.text-block').addClass('active').fadeIn(1000);
+                     return false;
+                 } else if (index == length) {
+                     $(this).removeClass('active').fadeOut(1000);
+                     $('.text .text-block').eq(0).addClass('active').fadeIn(1000);
+                     return false;
+                 }
+             });
+         };
+      </script>
+   </head>
+   <body >
+      <div class="header"  >
+         <div class="header-information">
+            <div class="header-information-text">
+               <p>Наш адрес:       </p>
+               <form action="" method="post" name="drop_down_box">
+                  <select name="menu" size="1">
+                     <option value="first">Первая позиция</option>
+                     <option selected="selected" value="second">г. Кировоград</option>
+                     <option value="third">Третья позиция</option>
+                     <option value="fourth">Четвертая позиция</option>
+                  </select>
+               </form>
+               ул. Дворцовая, 62/42 Телефоны: (0522) 59-555-0; (050) 813-812-8
+            </div>
+         </div>
+         <div class="header-main">
+            <div class="header-logo" ></div>
+            <div class="header-menu" >
+               <ul>
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#">О компании</a></li>
+                  <li><a href="#">Услуги</a></li>
+                  <li><a href="#">Продукции</a></li>
+                  <li><a href="#">Галерея</a></li>
+                  <li><a href="#">Сервис</a></li>
+                  <li><a href="#">Контакты</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="banner-main">
+         <div class="text">
+            <div class="banner  text-block" style="background:#e8e8e8;">
+               <div class="banners" ></div>
+            </div>
+            <div class="banner  text-block" style="background:#e8e8e8;">
+               <div class=" banners" ></div>
+            </div>
+         </div>
+      </div>
+      <div class="content"  >
+         <div class="content-left">
+            <h1>Компания «ВИКРА» работает на рынке светопрозрачных конструкций с 2000 года. </h1>
+            <p>Основная цель компании: производить высококачественные окна, двери, фасадные системы, секционные ворота, роллеты, жалюзи. Эффективные методы управления и внедрение смелых проектов, позволили нам в кратчайшие сроки захватить лидерство в оконном сегменте рынка.
+               На сегодняшний день компания ВИКРА - один из крупнейших в Украине автоматизированных заводов по производству металлопластиковых оконых и дверных конструкций.
+               Профессионализм и уверенность коллектива, имеющего большой опыт работы в изготовлении окон нового поколения – общеевропейского стандарта, гарантируют нашим клиентам быстрое и высококачественное выполнения заказа любой сложности.
+               Сохраняя свое доброе имя на протяжении долгих лет, компания ответственно относится к любому заказу: от одного окна до остекления многоэтажки. Заказчик может быть совершенно уверен в компетентной, высококвалифицированной помощи специалистов компании в выборе продукции под любую архитектурную форму. Наша задача – обеспечить клиентам максимальный комфорт и надежность на многие десятилетия.
+               Производство
+               Общая площадь завода 19 000 м2, из них 12 000 м2 используется под производство окон и дверей, стеклопакетов.
+               Мощное высокотехнологичное оборудование ведущих европейских фирм «Elumatec», «Sturtz», «Aluma», позволяющее достигать высочайшей точности резки стекла, обработки ПВХ изделий, в комплексе с собственной линией производства стеклопакетов, дает возможность выпускать 1500 окон в смену. Собственная система технического контроля компании обеспечивает гарантию качества выпускаемой продукции.
+               Роботизированная система производства с высоким уровнем самоконтроля «Elumatec SBZ-610», на которой производятся все операции по обработке профилей, от порезки до армирования, сама по себе есть гарантией качества нашей продукции.
+            </p>
+            <div class="content-left-banners">
+               <a href="#" >       <img src="img/12.jpg" alt="" style="margin-left:0"></a>
+               <a href="#" >       <img src="img/13.jpg" alt=""></a>
+               <a href="#" >       <img src="img/14.jpg" alt=""></a>
+            </div>
+         </div>
+         <div class="content-right">
+            <a href="#">
+               <div class="content-right-consultation">
+                  <div class="content-right-consultation-logo"></div>
+                  <div class="content-right-consultation-text">
+                     <p>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</p>
+                  </div>
+               </div>
+            </a>
+            <a href="#">
+               <div class="content-right-zamerschik">
+                  <div class="content-right-zamerschik-logo"></div>
+                  <div class="content-right-zamerschik-text">
+                     <p>ВЫЗОВ ЗАМЕРЩИКА</p>
+                  </div>
+               </div>
+            </a>
+            <div class="content-right-news">
+               <div class="content-right-zamerschik-name">
+                  <p>НОВОСТИ </p>
+               </div>
+               <div class="content-right-news-block" >
+                  <div class="content-right-news-block-foto" >
+                     <a href="#"><img src="img/news.jpg"
+                        width="75px" height="54px" alt=""></a>
+                  </div>
+                  <div class="content-right-news-block-text" >
+                     <h2>Сегодня окна доступны</h2>
+                     <p>не только в форме прямоугольника или квадрата. </p>
+                  </div>
+                  <div class="content-right-news-block-button" >
+                     <a href="#">
+                        <div class="content-right-news-block-button-read" > Подробно
+                        </div>
+                     </a>
+                  </div>
+                  <div class="content-right-news-block-line" >  &nbsp;
+                  </div>
+               </div>
+               <div class="content-right-news-block" >
+                  <div class="content-right-news-block-foto" >
+                     <a href="#"><img src="img/news.jpg"
+                        width="75px" height="54px" alt=""></a>
+                  </div>
+                  <div class="content-right-news-block-text" >
+                     <h2>Сегодня окна доступны</h2>
+                     <p>не только в форме прямоугольника или квадрата. </p>
+                  </div>
+                  <div class="content-right-news-block-button" >
+                     <a href="#">
+                        <div class="content-right-news-block-button-read" > Подробно
+                        </div>
+                     </a>
+                  </div>
+                  <div class="content-right-news-block-line" >  &nbsp;
+                  </div>
+               </div>
+               <div class="content-right-news-block" >
+                  <div class="content-right-news-block-foto" >
+                     <a href="#"><img src="img/news.jpg"
+                        width="75px" height="54px" alt=""></a>
+                  </div>
+                  <div class="content-right-news-block-text" >
+                     <h2>Сегодня окна доступны</h2>
+                     <p>не только в форме прямоугольника или квадрата. </p>
+                  </div>
+                  <div class="content-right-news-block-button" >
+                     <a href="#">
+                        <div class="content-right-news-block-button-read" > Подробно
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="content-prod" >
+            <div class="content-prod-name" >НАША ПРОДУКЦИЯ</div>
+            <div class="content-prod-block">
+               <a href="#" >       <img src="img/9.jpg" alt=""></a>
+               <p>Пластиковые окна</p>
+            </div>
+            <div class="content-prod-block">
+               <a href="#" >       <img src="img/10.jpg" alt=""></a>
+               <p>Пластиковые окна</p>
+            </div>
+            <div class="content-prod-block">
+               <a href="#" >       <img src="img/11.jpg"  alt=""></a>
+               <p>Пластиковые окна</p>
+            </div>
+            <div class="content-prod-block">
+               <a href="#" >       <img src="img/9.jpg" alt=""></a>
+               <p>Пластиковые окна</p>
+            </div>
+            <div class="content-prod-block">
+               <a href="#" >       <img src="img/10.jpg" alt=""></a>
+               <p>Пластиковые окна</p>
+            </div>
+            <div class="content-prod-block">
+               <a href="#" >       <img src="img/11.jpg"  alt=""></a>
+               <p>Пластиковые окна</p>
+            </div>
+         </div>
+         <link rel="stylesheet" href="css/all.css" type="text/css">
+         <div class="content-clients" >
+            <div class="content-clients-name" >НАШИ КЛИЕНТЫ</div>
+            <div id="circularslider" class="sirkl" >
+               <div class=" jcarousel-skin-tango" >
+                  <div class="jcarousel-container jcarousel-container-horizontal" style="position: relative; display: block;">
+                     <div class="jcarousel-clip jcarousel-clip-horizontal" style="position: relative;">
+                        <ul id="mycarousel" class="jcarousel-list jcarousel-list-horizontal" style="overflow: hidden; position: relative; top: 0px; margin: 0px; padding: 0px; left: -620px; width: 2580px;">
+                           <li  style="  margin-left: 10px !important; padding-right: 0px !important;width:auto;height:" jcarouselindex="1" style="float: left; list-style: none;">
+                              <a href="#" >
+                              <img src="img/5.jpg"  height="140px" width="auto"alt=""></a>
+                           </li>
+                           <li  style=" margin-left: 10px !important; padding-right: 0px !important;width:auto;" jcarouselindex="2" style="float: left; list-style: none;">
+                              <a href="#">
+                              <img src="img/6.jpg"  height="140px" width="auto"alt=""></a>
+                           </li>
+                           <li style="  margin-left: 10px !important; padding-right: 0px !important;width:auto;"  jcarouselindex="3" style="float: left; list-style: none;">
+                              <a href="#">
+                              <img src="img/7.jpg"  height="140px" width="auto"alt=""></a>
+                           </li>
+                           <li style="  margin-left: 10px !important; padding-right: 0px !important;width:auto;" jcarouselindex="4" style="float: left; list-style: none;">
+                              <a href="#">
+                              <img src="img/8.jpg"  height="140px" width="auto"alt=""></a>
+                           </li>
+                           <li  style=" margin: 0px !important; padding-right: 0px !important;width:auto;" jcarouselindex="5" style="float: left; list-style: none;">
+                              <a href="#" >
+                              <img src="img/5.jpg"  height="140px"width="auto"alt=""></a>
+                           </li>
+                           <li  style=" margin: 0px !important; padding-right: 0px !important;width:auto;" jcarouselindex="6" style="float: left; list-style: none;">
+                              <a href="http://www.lipisinov.net/portfolio/seo-prodvizhenie/">
+                              <img src="img/6.jpg"  height="140px" width="auto"alt=""></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="jcarousel-prev jcarousel-prev-horizontal" style="display: block;"></div>
+                     <div class="jcarousel-next jcarousel-next-horizontal" style="display: block;"></div>
+                  </div>
+               </div>
+            </div>
+            <!-- /Yandex.Metrika counter -->
+            <script src="js/all.js" type="text/javascript"></script><script type="text/javascript" src="js/savedresource.js"></script>
+         </div>
+         <div class="content-works" >
+            <div class="content-works-name" >НАШИ РАБОТЫ</div>
+            <div class="content-works-img" >
+               <a href="#"><img src="img/1.jpg"
+                  width="260px" height="175px" alt=""></a>
+               <a href="#"><img src="img/2.jpg"
+                  width="260px" height="175px" alt=""></a>
+               <a href="#"><img src="img/3.jpg"
+                  width="260px" height="175px" alt=""></a>
+               <a href="#"><img src="img/4.jpg"
+                  width="260px" height="175px" alt=""></a>
+            </div>
+            <div class="content-works-news-block-button" >
+               <a href="#">
+                  <div class="content-works-news-block-button-read" > Смотреть еще
+                  </div>
+               </a>
+            </div>
+         </div>
+         <div class="content-forms">
+            <div class="content-forms-kons">
+               <div class="content-forms-kons-img"> </div>
+               <div class="content-forms-kons-header">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</div>
+               <form action="<?php the_permalink(); ?>" id="contactForm" method="post">
+                  <input type="text" class="content-forms-kons-input" value="ФИО" onfocus="if (this.value == 'ФИО') {this.value = '';}" onblur="if (this.value == '') {this.value = 'ФИО';}" name="contactName" id="contactName" value="" />
+                  <div class="content-forms-kons-star"> * </div>
+                  <input type="text"  class="content-forms-kons-input" value="ТЕЛ" onfocus="if (this.value == 'ТЕЛ') {this.value = '';}" onblur="if (this.value == '') {this.value = 'ТЕЛ';}"name="email" id="email" value="" />
+                  <div class="content-forms-kons-star"> * </div>
+                  <input type="text"  class="content-forms-kons-input" value="Email" onfocus="if (this.value == 'Email') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Email';}"name="email" id="email" value="" />
+                  <button type="submit" class="content-forms-kons-button">Отправить</button>
+                  <input type="hidden" name="submitted" id="submitted" value="true" />
+               </form>
+            </div>
+            <div class="content-forms-zamer">
+               <div class="content-forms-zamer-img"> </div>
+               <div class="content-forms-zamer-header">ВЫЗОВ ЗАМЕРЩИКА</div>
+               <form action="<?php the_permalink(); ?>" id="contactForm" method="post">
+                  <input type="text" class="content-forms-zamer-input" value="ФИО" onfocus="if (this.value == 'ФИО') {this.value = '';}" onblur="if (this.value == '') {this.value = 'ФИО';}" name="contactName" id="contactName" value="" />
+                  <div class="content-forms-zamer-star"> * </div>
+                  <input type="text"  class="content-forms-zamer-input" value="Адрес" onfocus="if (this.value == 'Адрес') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Адрес';}"name="email" id="email" value="" />
+                  <input type="text"  class="content-forms-zamer-input" value="Город" onfocus="if (this.value == 'Город') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Город';}"name="email" id="email" value="" />
+                  <div class="content-forms-zamer-star"> * </div>
+                  <input type="text"  class="content-forms-zamer-input" value="Тел." onfocus="if (this.value == 'Тел.') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Тел.';}"name="email" id="email" value="" />
+                  <button type="submit" class="content-forms-zamer-button">Отправить</button>
+                  <input type="hidden" name="submitted" id="submitted" value="true" />
+               </form>
+            </div>
+         </div>
+      </div>
+      <div class="footer"  >
+         <div class="footer-main"  >
+            <div class="footer-main-tel"  >
+               Телефоны:
+               <p><b>(0522)</b> 59-555-0      </p>
+               <p><b>	(050)</b> 813-812-8    </p>
+            </div>
+            <div class="footer-main-logo"  >
+            </div>
+            <div class="footer-main-bottom"  > Все права защищены</div>
+         </div>
+      </div>
+   </body>
+</html>
